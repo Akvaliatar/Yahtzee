@@ -1,3 +1,24 @@
+// Author: Aureliina Hietamies
+import React from 'react';
+import {View} from 'react-native';
+import Header from './components/header.js';
+import Gameboard from './components/gameboard.js';
+import Footer from './components/footer.js';
+import StyleSheet from './styles/styles.js';
+
+
+
+export default function App() {
+
+  return (
+      <View style={StyleSheet.container}>
+        <Header />
+        <Gameboard />
+        <Footer />
+      </View>
+  );
+}
+/*  harjoitus mallina
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect} from 'react';
 import {  Text, View, Image, Button } from 'react-native';
@@ -62,3 +83,4 @@ export default function App() {
     </View>
   );
 }
+*/
